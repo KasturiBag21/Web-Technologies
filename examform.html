@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exam Registration Form</title>
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            background-color: rgb(255, 250, 245);
+        }h2{
+            background-color: rgb(201, 209, 209);
+            color: rgb(37, 37, 32);
+        }button {
+            background: #007BFF;
+            color: white;
+            padding: 7px 15px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Applicant Personal Details</h2>
+    <form background:white; margin: 5px; >
+        <label>Enrollment ID:</label>
+        <input type="text" name="enrollment" placeholder="Enter Enrollment ID"><br><br>
+
+        <label>Name of the Candidate:</label>
+        <input type="text" name="firstname" placeholder="first name" required>
+        <input type="text" name="lastname" placeholder="last name"required><br><br>
+
+        <label>Email Address:</label>
+        <input type="email" name="email" placeholder="example@mail.com" >
+        <button type="button">Verify Email Address</button><br><br>
+
+        <label style="margin-left:20px">Mobile No.:</label>
+        <input type="tel" name="mobile" placeholder="0123456789">
+        <button type="button">Verify Mobile no.</button><br><br>
+        
+        <label>Date of Birth:</label>
+        <input type="date" name="dob" ><br><br>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="Male">Male
+        <input type="radio" name="gender" value="Female">Female<br><br>
+
+        <label>Nationality:</label>
+        <input type="radio" name="nationality" value="indian">Indian
+        <input type="radio" name="nationality" value="other">other<br><br>
+
+        <label>Category:</label>
+        <input type="radio" name="category" value="general">General
+        <input type="radio" name="category" value="OBCs">OBCs
+        <input type="radio" name="category" value="STs">ST
+        <input type="radio" name="category" value="SCs">SC<br><br>
+
+        <label>Person with Disability:</label>
+        <input type="radio" name="nationality" value="pwd">Yes
+        <input type="radio" name="nationality" value="pwd">no<br><br>
+
+        <label>Address:</label><br>
+        <textarea name="address" rows="5" cols="50"></textarea><br><br>
+
+        <label>ID Proof</label>
+        <select><option>Adhar card</option>
+            <option>Pan card</option>
+            <option>Driving Lisence</option>
+            <option>College id card</option>
+            <option>Ration card</option>
+            <option>voter id</option></select><br><br>
+
+        <label>ID Proof Number:</label>
+        <input type="text" placeholder="Enter ID Proof Number">
+        <button type="button">Verify ID Proof</button><br><br>
+
+        <label>Name of Parent/Guardian:</label>
+        <input type="text" placeholder="Enter name"><br><br>
+
+        <label>Parent Mobile No.:</label>
+        <input type="tel" name="mobile" placeholder="0123456789"><br><br>
+
+        <button type="submit">Submit</button>
+        
+    </form>
+</body>
+</html>

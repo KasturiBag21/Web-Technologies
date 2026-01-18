@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head> 
+<body style="background: rgb(177, 172, 192); font-family: Arial; margin: 30px;"></body>
+<body>
+    <h1 style="text-align: center;">Employee Registration No</h1>
+    <form style="text-align: center;">
+        <label>Employee Id:</label>
+        <input type="text" name="empid" placeholder="Emp-0000" required><br><br>
+        <label>Employee Name:</label><br><br>
+        <input type="text" name="firstname" placeholder="first name" required>
+        <input type="text" name="lastname" placeholder="last name"required><br><br>
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="Male">Male
+        <input type="radio" name="gender" value="Female">Female
+        <label style="margin-left:20px">Marital Status:</label>
+        <input type="radio" name="state" value="Married">Married
+        <input type="radio" name="state" value="Single">Single<br><br>
+        <label>Date of Birth:</label>
+        <input type="date" name="dob" >
+        <lable>Email:</lable>
+        <input type="email" name="Empmail" placeholder="abdbd@gmail.com"required><br><br>
+        <lable>Phone No.:</lable>
+        <input type="tel" name="Empphn" placeholder="+91/ 0123456789" pattern="\+91[0-9]{10}" title="Enter 10 digit number"><br><br>
+        <lable>Qualifiaction:</lable>
+        <input type="text" name="qualification" required><br><br>
+        <lable>Department:</lable>
+        <select name="dept">
+            <option>Technical</option>
+            <option>HR</option>
+            <option>Cyber</option>
+            <option>PR</option>
+            <option>BOD</option>
+        </select><br><br>
+        <lable>Date of Joining:</lable>
+        <input type="date" name="Joining" required><br><br>
+        <lable>Year of Experience:</lable>
+        <input type="number" name="Experience" required><br><br>
+        <label>Address:</label><br>
+        <textarea name="address" rows="5" cols="50"></textarea><br><br>
+        <input type="submit" value="Register">
+    </form>
+</body>   
+</html>

@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Microsoft Store — WhatsApp (Improved Mockup)</title>
+  <style>
+    :root{
+      --page-bg:#0b0b0c;
+      --panel:#0f1112;
+      --muted:#9aa0a6;
+      --accent-green-start:#1f7b3a;
+      --accent-green-end:#153628;
+      --card-radius:18px;
+      --max-width:1320px;
+      --glass: rgba(255,255,255,0.04);
+      font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--page-bg);color:#e8eef0}
+
+    /* Page layout */
+    .container{max-width:var(--max-width);margin:18px auto;padding:18px;display:grid;grid-template-columns:72px 1fr 320px;gap:20px}
+
+    /* left narrow nav */
+    .nav{display:flex;flex-direction:column;gap:14px;align-items:center}
+    .nav .btn{width:60px;height:60px;border-radius:14px;background:#0e0f10;display:flex;align-items:center;justify-content:center;box-shadow:inset 0 -1px 0 rgba(255,255,255,0.01)}
+    .nav .btn small{display:block;opacity:.9}
+
+    /* main area */
+    .main{grid-column:2}
+    .hero-wrap{border-radius:22px;overflow:hidden;background:linear-gradient(180deg,var(--accent-green-start) 0%, var(--accent-green-end) 70%);box-shadow:0 8px 30px rgba(0,0,0,0.6)}
+    .hero{padding:34px}
+    .hero-top{display:flex;gap:26px;align-items:flex-start}
+
+    /* big app card */
+    .icon{width:120px;height:120px;border-radius:20px;background:rgba(255,255,255,0.06);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    .icon img{width:86px;height:86px;object-fit:cover;border-radius:12px}
+
+    .meta-wrap{flex:1}
+    h1{margin:0;font-size:42px;line-height:1;font-weight:800}
+    .sub{margin-top:6px;color:rgba(255,255,255,0.9);font-size:14px}
+    .rating-row{display:flex;gap:18px;align-items:center;margin-top:12px;font-size:14px}
+    .rating-row .score{color:#ffd86b;font-weight:700}
+    .desc{margin-top:14px;color:rgba(255,255,255,0.9);max-width:880px;line-height:1.55}
+
+    /* install box */
+    .actions{display:flex;align-items:center;gap:18px;margin-top:18px}
+    .install-pill{background:rgba(255,255,255,0.08);padding:12px 16px;border-radius:10px;min-width:260px}
+    .install-pill .title{font-weight:700}
+    .install-pill .sub{font-size:13px;color:rgba(255,255,255,0.85)}
+
+    .age-badge{margin-left:auto;text-align:right}
+    .age-badge .small{color:rgba(255,255,255,0.85);font-size:13px}
+    .age-badge .badge{display:inline-block;margin-top:6px;background:rgba(255,255,255,0.06);padding:8px 10px;border-radius:9px}
+
+    /* screenshots panel */
+    .screens{margin-top:20px;padding:18px;border-radius:14px;background:linear-gradient(180deg, rgba(0,0,0,0.18), rgba(0,0,0,0.25));}
+    .screens h2{margin:0 0 12px 0;font-size:18px}
+    .shots{display:flex;gap:12px}
+    .shot{flex:1;border-radius:12px;overflow:hidden;background:#0b0b0c;height:220px;display:flex;align-items:center;justify-content:center;padding:6px}
+    .shot img{width:100%;height:100%;object-fit:cover}
+
+    /* About card below hero */
+    .about{margin-top:18px;background:var(--panel);padding:18px;border-radius:12px}
+
+    /* right column */
+    .right{grid-column:3}
+    .discover{position:sticky;top:22px}
+    .discover h3{margin:0 0 12px 0}
+    .rec{display:flex;gap:12px;align-items:center;padding:12px;background:rgba(255,255,255,0.02);border-radius:12px;margin-bottom:12px}
+    .rec .ico{width:56px;height:56px;border-radius:10px;background:rgba(255,255,255,0.04);display:flex;align-items:center;justify-content:center;font-weight:700}
+    .rec .meta{font-size:14px}
+    .rec .muted{font-size:13px;color:var(--muted)}
+
+    /* make screenshots larger on wide screens like the screenshot */
+    @media(min-width:1200px){
+      .shots{gap:18px}
+      .shot{height:320px}
+    }
+
+    /* responsive */
+    @media(max-width:1000px){
+      .container{grid-template-columns:56px 1fr}
+      .right{display:none}
+      .shot{height:200px}
+      h1{font-size:34px}
+    }
+    @media(max-width:640px){
+      .container{grid-template-columns:1fr;gap:12px;padding:12px}
+      .nav{flex-direction:row;justify-content:flex-start}
+      .hero{padding:18px}
+      .shot{height:160px}
+    }
+
+    .muted{color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="nav" aria-hidden>
+      <div class="btn">🏠</div>
+      <div class="btn">📦</div>
+      <div class="btn">🎮</div>
+    </div>
+
+    <main class="main">
+      <div class="hero-wrap">
+        <div class="hero">
+          <div class="hero-top">
+            <div class="icon" aria-hidden>
+              <!-- replace src with a real icon file; there's an image uploaded in the container you can use: /mnt/data/1ef26a9e-8b23-429e-9f7a-c839c468689d.png -->
+              <img src="/mnt/data/1ef26a9e-8b23-429e-9f7a-c839c468689d.png" alt="app icon">
+            </div>
+
+            <div class="meta-wrap">
+              <h1>WhatsApp</h1>
+              <div class="sub">WhatsApp Inc.</div>
+
+              <div class="rating-row">
+                <div><span class="score">4.5</span> ★</div>
+                <div class="muted">| 245K ratings</div>
+                <div class="muted">Social</div>
+              </div>
+
+              <p class="desc">WhatsApp from Meta is a 100% free messaging app. It's used by over 2B people in more than 180 countries. It's simple, reliable, and private, so you can easily keep in touch with friends and family.</p>
+
+              <div class="actions">
+                <div class="install-pill" role="status">
+                  <div class="title">Installing (100%)</div>
+                  <div class="muted" style="margin-top:4px;font-size:13px">Almost done</div>
+                </div>
+
+                <div class="age-badge">
+                  <div class="small muted">Age rating</div>
+                  <div class="badge">3+</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="screens">
+            <h2>Screenshots</h2>
+            <div class="shots">
+              <div class="shot"><img src="assets/screenshot1.png" alt="screenshot 1"></div>
+              <div class="shot"><img src="assets/screenshot2.png" alt="screenshot 2"></div>
+              <div class="shot"><img src="assets/screenshot3.png" alt="screenshot 3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about">
+        <h3>About this app</h3>
+        <p class="muted" style="margin-top:8px">Updated layout: taller hero, larger icon, denser spacing and shading to better match the Microsoft Store screenshot. Replace the placeholder screenshots in <code>assets/</code> and the icon path above if you want an exact match.</p>
+      </div>
+    </main>
+
+    <aside class="right">
+      <div class="discover">
+        <h3>Discover more</h3>
+        <div class="rec">
+          <div class="ico">W</div>
+          <div>
+            <div class="meta">WhatsApp Beta</div>
+            <div class="muted">Free</div>
+          </div>
+        </div>
+        <div class="rec">
+          <div class="ico">I</div>
+          <div>
+            <div class="meta">Instagram</div>
+            <div class="muted">Free</div>
+          </div>
+        </div>
+        <div class="rec">
+          <div class="ico">F</div>
+          <div>
+            <div class="meta">Facebook</div>
+            <div class="muted">Free</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+</body>
+</html>
