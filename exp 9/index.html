@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FAQ Section</title>
+  <style>
+    body { font-family: Arial; margin: 30px; }
+    input { padding: 5px; margin-bottom: 20px; width: 300px; }
+    .faq { margin-bottom: 10px; }
+    .question { background: #eee; padding: 10px; cursor: pointer; border-radius: 5px; }
+    .answer { display: none; padding: 10px; border-left: 3px solid #333; }
+  </style>
+</head>
+<body>
+<h2>FAQ</h2>
+<input type="text" id="search" placeholder="Search FAQs..." onkeyup="filterFAQs()">
+
+<div class="faq">
+  <div class="question" onclick="toggleAnswer(this)">What is DOM?</div>
+  <div class="answer">DOM stands for Document Object Model.</div>
+</div>
+
+<div class="faq">
+  <div class="question" onclick="toggleAnswer(this)">What is JavaScript?</div>
+  <div class="answer">JavaScript is a programming language for web development.</div>
+</div>
+
+<div class="faq">
+  <div class="question" onclick="toggleAnswer(this)">What is CSS?</div>
+  <div class="answer">CSS is used for styling HTML elements.</div>
+</div>
+
+<script>
+function toggleAnswer(q) {
+  const a = q.nextElementSibling;
+  a.style.display = a.style.display === 'block' ? 'none' : 'block';
+}
+
+function filterFAQs() {
+  const filter = document.getElementById('search').value.toLowerCase();
+  const faqs = document.querySelectorAll('.faq');
+  faqs.forEach(faq => {
+    const question = faq.querySelector('.question').textContent.toLowerCase();
+    faq.style.display = question.includes(filter) ? 'block' : 'none';
+  });
+}
+</script>
+</body>
+</html>

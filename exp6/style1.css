@@ -1,0 +1,35 @@
+body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      background: url("image/abh.jpg") no-repeat center center fixed;
+      background-size:50cqmax;
+
+    }
+    .box {
+      background: #fff;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    th {
+      background: #d9eaf7; 
+      color: #002244;
+    }
+    th, td {
+      border: 1px solid #999;
+      padding: 8px 10px;
+      text-align: center;
+    }
+    img {
+      width: 120px;
+      height: 80px;
+      object-fit: cover;
+    }

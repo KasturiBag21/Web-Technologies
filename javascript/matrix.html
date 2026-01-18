@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Program</title>
+</head>
+<body>
+    <h1 align="center">A JavaScript Program to Find Sum, Min, and Max from a Matrix</h1>
+    <hr color="red">
+    <script>
+        let M = [
+            [1, 2, 4],
+            [4, 3, 5],
+            [7, 3, 9]
+        ];
+        document.write("<br><u><mark>MATRIX ELEMENTS</mark></u><br>");        
+        let sum = 0;
+        let min = M[0][0];
+        let max = M[0][0];
+        for (let i = 0; i < 3; i++) {
+            for (let j = 0; j < 3; j++) {
+                document.write(M[i][j] + "\t");
+            }
+            document.write("<br>");
+        }
+        for (let i = 0; i < 3; i++) {
+            for (let j = 0; j < 3; j++) {
+                sum += M[i][j];
+                if (M[i][j] < min) min = M[i][j];
+                if (M[i][j] > max) max = M[i][j];
+            }
+        }
+        document.write("<br>SUM of Elements = " + sum);
+        document.write("<br>Minimum Element = " + min);
+        document.write("<br>Maximum Element = " + max);
+    </script>
+</body>
+</html>

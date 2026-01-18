@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>bulb actions</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+</html>
+<body>
+    <h2>Bulb on/off </h2>
+    <img id="bulb" src="image/bulb.gif" alt="bulb">
+    <div>
+        <button onclick="turnOn()">Turn on</button>
+        <button onclick="turnOff()">Turn off</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sunny Day with Clouds</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(to top, #87CEEB, #E0FFFF);
+      height: 100vh;
+      margin: 0;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h2 {
+      color: #333;
+      margin-bottom: 30px;
+      z-index: 2;
+    }
+
+    /* Clouds styling */
+    .cloud {
+      position: absolute;
+      background: white;
+      border-radius: 50%;
+      box-shadow: 30px 30px 0 10px white, 60px 15px 0 15px white, 90px 30px 0 10px white;
+      width: 80px;
+      height: 50px;
+      opacity: 0.9;
+      animation: moveClouds linear infinite;
+    }
+
+    @keyframes moveClouds {
+      from { left: -200px; }
+      to { left: 120%; }
+    }
+
+    /* Many clouds with different positions and speeds */
+    .cloud:nth-child(1) { top: 80px; animation-duration: 55s; animation-delay: 0s; }
+    .cloud:nth-child(2) { top: 130px; animation-duration: 65s; animation-delay: 0s; }
+    .cloud:nth-child(3) { top: 180px; animation-duration: 70s; animation-delay: 0s; }
+    .cloud:nth-child(4) { top: 220px; animation-duration: 60s; animation-delay: 0s; }
+    .cloud:nth-child(5) { top: 270px; animation-duration: 75s; animation-delay: 0s; }
+    .cloud:nth-child(6) { top: 320px; animation-duration: 80s; animation-delay: 0s; }
+    .cloud:nth-child(7) { top: 360px; animation-duration: 70s; animation-delay: 0s; }
+
+    /* Sun styling */
+    #sun {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      background: radial-gradient(circle, #FFD700, #FFA500);
+      box-shadow: 0 0 60px 20px rgba(255, 200, 0, 0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+      cursor: pointer;
+      animation: spin 10s linear infinite;
+      transition: 0.4s;
+      z-index: 1;
+    }
+
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    #message {
+      margin-top: 30px;
+      font-size: 22px;
+      font-weight: 500;
+      color: #444;
+      z-index: 2;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Click the Sun to Brighten Your Day</h2>
+
+  <!-- Many Clouds -->
+  <!-- <div class="cloud"></div>
+  <div class="cloud"></div>
+  <div class="cloud"></div>
+  <div class="cloud"></div>
+  <div class="cloud"></div>
+  <div class="cloud"></div>
+  <div class="cloud"></div>
+
+  <!-- Sun -->
+  <!-- <div id="sun" onclick="shine()">.</div>
+
+  <p id="message">Hello Sunshine!</p>
+
+  <script>
+    const sunColors = ["#FFD700", "#FFA500", "#FFB347", "#FFF44F", "#FFC300"];
+    const messages = [
+      "You make the sky brighter!",
+      "Keep shining like the sun!",
+      "You spread warmth wherever you go.",
+      "A beautiful day begins with your smile.",
+      "You're glowing with positive energy."
+    ];
+
+    function shine() {
+      const randomColor = sunColors[Math.floor(Math.random() * sunColors.length)];
+      const randomMsg = messages[Math.floor(Math.random() * messages.length)];
+
+      const sun = document.getElementById("sun");
+      const msg = document.getElementById("message");
+
+      // Change sun color and glow
+      sun.style.background = `radial-gradient(circle, ${randomColor}, orange)`;
+      sun.style.boxShadow = `0 0 60px 20px ${randomColor}`;
+
+      // Update message
+      msg.innerHTML = randomMsg;
+    }
+  </script>
+</body>
+</html> --> 

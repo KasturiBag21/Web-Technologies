@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Java Script Programs</title>
+    </head>
+    <body>
+        <h1 align="center"> JavaScript prgm to sort an array</h1>
+        <hr color="red">
+        <script>
+            let a=new Array(10,50,20,80,45,72);
+            document.write("<br><u><mark>Before sort<mark></u><br>");
+                for(let i=0;i<a.length;i++){
+                    document.write(a[i]+"<br>");
+                }for(let i=0;i<a.length;i++){
+                    for(let j=i+1;j<a.length;j++){
+                        if(a[i]>a[j]){
+                            let t=a[i];
+                            a[i]=a[j];
+                            a[j]=t;
+                        }
+                    }
+                }document.write("<br><u><mark>After sort:</mark></u><br>");
+                for(let i=0;i<a.length;i++){
+                    document.write(a[i]+"<br>");
+                }
+        </script>
+    </body>
+</html>

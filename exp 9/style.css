@@ -1,0 +1,23 @@
+body{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top:50px;
+}
+img{
+    width: 200px;
+    height: 200px;
+}
+button{
+    padding: auto;
+    margin: auto;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+#onBtn{
+    background-color: green;
+}
+#offBtn{
+    background-color: red;
+}

@@ -1,0 +1,23 @@
+.card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 22px 18px;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.12);
+  text-align: center;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.card img {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  display: block;
+  margin: 6px auto 14px;
+}
+.card h3{
+    margin: 8px 0;
+    font-size: 20px;
+}
+.price{
+    font-weight: bold;
+    color: black;
+}

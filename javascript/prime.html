@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Java Script Programs</title>
+    </head>
+    <body>
+        <h1 align="center"> JavaScript prgm to print prime numbers</h1>
+        <hr color="red">
+        <script>
+            let n = parseInt(prompt("Enter range::"));
+            let i=1;
+            document.write("<br>Given range:"+n);
+            document.write("<br><u>prime numbers:</u></br>");
+            do{
+                let c=0;
+                for(let j=1;j<=i;j++){
+                    if(i%j==0){
+                        c++
+                    }
+                }if(c==2){
+                    document.write(i+"<br>");
+                }i++;
+            }while(i<=n);
+        </script>
+    </body>
+</html>
